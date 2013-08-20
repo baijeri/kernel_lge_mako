@@ -2,6 +2,9 @@
 
 # Stupid shell script to compile kernel, nothing fancy
 
+VERSION=`cat .version`
+NEWVERSION=$(expr $VERSION + 1)
+
 # Exports all the needed things Arch, SubArch and Cross Compile
 export ARCH=arm
 echo 'exporting Arch'
@@ -13,6 +16,8 @@ export CROSS_COMPILE=/media/dev/android-ndk-r9/toolchains/arm-linux-androideabi-
 echo 'exporting Cross Compile'
 
 # Make sure build is clean!
+echo "Removing old zImage"
+rm -f arch/arm/boot/zImage
 echo 'Cleaning build'
 make clean
 
@@ -29,4 +34,5 @@ fi
 
 # Lets go!
 echo 'Lets start!'
-make -j$1
+#make -j$1
+make -j$1 V=99 2>&1 |tee build-r$NEWVERSION.log
