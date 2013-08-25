@@ -10,9 +10,12 @@ export ARCH=arm
 echo 'exporting Arch'
 export SUBARCH=arm
 echo 'exporting SubArch'
-#export CROSS_COMPILE=/home/prbassplayer/WIP4.3/prebuilt/linux-x86/toolchain/linaro/bin/arm-linux-gnueabihf-
-export CROSS_COMPILE=/media/dev/android-ndk-r9/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
-#export CROSS_COMPILE=/home/prbassplayer/WIP/prebuilt/linux-x86/toolchain/arm-eabi-4.4.3/bin/arm-eabi-
+
+##GCC 4.8
+#export CROSS_COMPILE=/media/dev/android-ndk-r9/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
+
+##Linaro 4.7 2013.04
+export CROSS_COMPILE=/home/ubu/dev/kernel/toolchains/gcc-linaro-4.7-2013.04/bin/arm-linux-gnueabihf-
 echo 'exporting Cross Compile'
 
 # Make sure build is clean!
