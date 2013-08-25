@@ -28,6 +28,7 @@ make clean
 if [ "$1" = "config" ] ; then
 echo 'Making defconfig for Mako'
 make slim_mako_defconfig
+make menuconfig
 exit
 fi
 
