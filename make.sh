@@ -18,10 +18,10 @@ echo 'exporting SubArch'
 #export CROSS_COMPILE=/media/dev/android-ndk-r9/toolchains/arm-linux-androideabi-4.8/prebuilt/linux-x86_64/bin/arm-linux-androideabi-
 
 ##Linaro 4.7 2013.04
-#export CROSS_COMPILE=/home/ubu/dev/kernel/toolchains/gcc-linaro-4.7-2013.04/bin/arm-linux-gnueabihf-
+export CROSS_COMPILE=/home/ubu/dev/kernel/toolchains/gcc-linaro-4.7-2013.04/bin/arm-linux-gnueabihf-
 
 ##Linaro 4.8
-export CROSS_COMPILE=/home/ubu/dev/kernel/toolchains/gcc-linaro-4.8-2013.08/bin/arm-linux-gnueabihf-
+#export CROSS_COMPILE=/home/ubu/dev/kernel/toolchains/gcc-linaro-4.8-2013.08/bin/arm-linux-gnueabihf-
 
 echo 'exporting Cross Compile'
 
